@@ -50,6 +50,7 @@ public class Ejercicio1App {
 			s_notamedia=""+(notamedia/materias);									//al finalizar de añadir notas se hace la media y se guarda en un string
 			alumnos_notas.put(nombre, s_notamedia);									//se añade al diccionario por el nombre y su nota media.
 		}
+		sc.close();
 		return alumnos_notas;														//retornamos el diccionario
 	}
 
