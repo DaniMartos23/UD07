@@ -73,19 +73,17 @@ public class Ejercicio2App {
 	private static Hashtable<String, double[]> crearDict() {
 		// funcion que crea el diccionario de productos con su precio e IVA correspondiente
 		Hashtable<String,double[]> dict  = new Hashtable<String,double[]>();
-		double[] valores= new double[2];
-		valores[0]=0.75;
-		valores[1]=IVAMIN;
-		dict.put("manzana", valores);
+		double[] valores= {0.75,IVAMIN};
+		dict.put("manzana",valores.clone());
 		valores[0]=3.99;
 		valores[1]=IVAMAX;
-		dict.put("ruffles", valores);
+		dict.put("ruffles", valores.clone());
 		valores[0]=10;
 		valores[1]=IVAMAX;
-		dict.put("pelota", valores);
+		dict.put("pelota", valores.clone());
 		valores[0]=2.99;
 		valores[1]=IVAMIN;
-		dict.put("leche", valores);
+		dict.put("leche", valores.clone());
 		
 		return dict;
 	}
